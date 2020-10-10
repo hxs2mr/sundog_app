@@ -1,7 +1,7 @@
 # sundog_app
 在Flutter状态管理：Provider4 入门教程（一） 
 
-#Consumer的使用
+##Consumer的使用
  
  Consumer本身没有魔法，也没有什么花里胡哨的实现。只不过是在一个新的控件中使用Provider.of，然后将这个控件的build方法委托给lamda里的builder。这个builder会被调用多次。就是这么简单。It allows obtaining a value from a provider when we don't have a BuildContext that is a descendant of said provider, and therefore cannot use Provider.of.
  
