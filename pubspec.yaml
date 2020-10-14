@@ -30,6 +30,9 @@ dependencies:
   cupertino_icons: ^1.0.0
   #状态管理器
   provider: ^4.3.2+2
+  #视频播放器
+  video_player: ^0.10.0
+  chewie: ^0.9.10
 dev_dependencies:
   flutter_test:
     sdk: flutter

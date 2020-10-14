@@ -1,8 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sundog_app/page/one_page.dart';
 import 'package:sundog_app/page/second_page.dart';
+import 'package:sundog_app/page/slive_page.dart';
 import 'package:sundog_app/page/third_page.dart';
+import 'package:sundog_app/page/video_page.dart';
 import 'package:sundog_app/provider/mychangen_notifier.dart';
 
 void main() {
@@ -113,6 +116,23 @@ class _MyHomePageState extends State<MyHomePage> {
                           }));
                         },
                       child: Text("跳转第三页"),
+                    ),
+                    FlatButton(
+                        onPressed: (){
+                          Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                            return VideoPage();
+                          }));
+                        },
+                        child:Text("跳转第四页"), ),
+                    RaisedButton(
+                        color: Colors.blueAccent,
+                        child: Text("跳转第五页"),
+                        onPressed:(){
+                          Navigator.of(context).push(MaterialPageRoute(builder: (_){
+                            return SlivePage();
+                          }));
+
+                        },
 
                     )
 

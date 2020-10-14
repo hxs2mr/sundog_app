@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:sundog_app/provider/mychangen_notifier.dart';
 import 'package:sundog_app/provider/third_notifier.dart';
 import 'package:sundog_app/widget/addnumber_widget.dart';
 import 'package:sundog_app/widget/show_add_widget.dart';
@@ -26,11 +27,11 @@ class _ThirdPageState extends State<ThirdPage> {
                 return ThirdNotifier();
               },
             ),
-             ChangeNotifierProvider(
-               create: (context){
-                 return ThirdNotifier();
-               }
-             )
+            ChangeNotifierProvider(
+              create: (context){
+                return MyChangenNotifier();
+              },
+            )
           ],
           child: Column(
             children: [
